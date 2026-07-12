@@ -17,6 +17,17 @@ At the core of Offside AI is **Coach AI**, an elite intelligent assistant powere
 
 ---
 
+## 📱 Screenshots
+
+<div align="center">
+  <img src="images/1.png" width="18%" />
+  <img src="images/2.png" width="18%" />
+  <img src="images/3.png" width="18%" />
+  <img src="images/4.png" width="18%" />
+  <img src="images/5.png" width="18%" />
+</div>
+
+---
 ## 🛠 Tech Stack
 
 ### Frontend (Mobile App)
