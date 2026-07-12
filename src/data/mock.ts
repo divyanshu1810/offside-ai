@@ -626,4 +626,5 @@ export const LEAGUE_METADATA: Record<number, { name: string; icon: AppIconName; 
   61: { name: 'Ligue 1', icon: AppIcons.league, color: '#DDE523' },
   2: { name: 'Champions League', icon: AppIcons.trophy, color: '#0D1C8B' },
   3: { name: 'Europa League', icon: AppIcons.star, color: '#F68E1E' },
+  1: { name: 'World Cup', icon: AppIcons.trophy, color: '#8A1538' },
 };

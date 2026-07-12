@@ -17,6 +17,26 @@ interface InsightCardProps {
   icon?: AppIconName;
 }
 
+const ParsedText = ({ text, style }: { text: string; style?: any }) => {
+  // Strip leading bullet chars (like ✓, -, *) and spaces
+  const cleanText = text.replace(/^(\d+\.|[-*✓])\s+/, '').trim();
+  const parts = cleanText.split(/(\*\*.*?\*\*)/g);
+  return (
+    <Text style={style}>
+      {parts.map((part, index) => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+          return (
+            <Text key={index} style={{ fontWeight: 'bold', color: OffsideColors.textPrimary }}>
+              {part.slice(2, -2)}
+            </Text>
+          );
+        }
+        return <Text key={index}>{part}</Text>;
+      })}
+    </Text>
+  );
+};
+
 export function InsightCard({ title, insights, icon = AppIcons.ai }: InsightCardProps) {
   return (
     <GlassCard style={styles.card}>
@@ -28,7 +48,7 @@ export function InsightCard({ title, insights, icon = AppIcons.ai }: InsightCard
         {insights.map((insight, index) => (
           <View key={index} style={styles.insightRow}>
             <Text style={styles.checkmark}>✓</Text>
-            <Text style={styles.insightText}>{insight}</Text>
+            <ParsedText text={insight} style={styles.insightText} />
           </View>
         ))}
       </View>

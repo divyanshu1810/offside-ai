@@ -41,15 +41,6 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="stats"
-        options={{
-          title: 'Stats',
-          tabBarIcon: ({ focused }) => (
-            <TabIcon icon={AppIcons.stats} focused={focused} />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="ai"
         options={{
           title: 'AI',
@@ -59,11 +50,20 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="profile"
+        name="streams"
         options={{
-          title: 'Profile',
+          title: 'Streams',
           tabBarIcon: ({ focused }) => (
-            <TabIcon icon={AppIcons.profile} focused={focused} />
+            <TabIcon icon={AppIcons.video} focused={focused} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="news"
+        options={{
+          title: 'News',
+          tabBarIcon: ({ focused }) => (
+            <TabIcon icon={AppIcons.news} focused={focused} />
           ),
         }}
       />

@@ -21,7 +21,7 @@ import { AppIcon } from '@/components/ui/AppIcon';
 import { AppIcons } from '@/constants/icons';
 import { OffsideColors, BorderRadius } from '@/constants/theme';
 import { Typography } from '@/constants/typography';
-import { getTodayFixtures } from '@/services/api-football';
+import { getFixturesByDate } from '@/services/api-football';
 import { LEAGUE_METADATA, type Fixture } from '@/data/mock';
 
 type DateFilter = 'yesterday' | 'today' | 'tomorrow';
@@ -34,9 +34,10 @@ export default function MatchesScreen() {
   const [refreshing, setRefreshing] = useState(false);
 
   const loadData = useCallback(async () => {
-    const data = await getTodayFixtures();
+    const offset = dateFilter === 'yesterday' ? -1 : dateFilter === 'tomorrow' ? 1 : 0;
+    const data = await getFixturesByDate(offset);
     setFixtures(data);
-  }, []);
+  }, [dateFilter]);
 
   useEffect(() => {
     loadData();

@@ -32,6 +32,7 @@ import type { Fixture } from '@/data/mock';
 export default function HomeScreen() {
   const insets = useSafeAreaInsets();
   const [refreshing, setRefreshing] = useState(false);
+  const [isInitialLoading, setIsInitialLoading] = useState(true);
   const [liveFixtures, setLiveFixtures] = useState<Fixture[]>([]);
   const [todayFixtures, setTodayFixtures] = useState<Fixture[]>([]);
 
@@ -45,6 +46,8 @@ export default function HomeScreen() {
       setTodayFixtures(today.filter((f) => !['LIVE', '1H', '2H', 'HT'].includes(f.status.short)));
     } catch (err) {
       console.error('Failed to load data:', err);
+    } finally {
+      setIsInitialLoading(false);
     }
   }, []);
 
@@ -58,12 +61,15 @@ export default function HomeScreen() {
     setRefreshing(false);
   }, [loadData]);
 
-  const getGreeting = () => {
-    const hour = new Date().getHours();
-    if (hour < 12) return 'Good Morning';
-    if (hour < 17) return 'Good Afternoon';
-    return 'Good Evening';
-  };
+
+
+  if (isInitialLoading) {
+    return (
+      <View style={[styles.container, { paddingTop: insets.top, justifyContent: 'center', alignItems: 'center' }]}>
+        <Text style={styles.loadingText}>Loading Home...</Text>
+      </View>
+    );
+  }
 
   // Featured match for prediction (first live match or first upcoming)
   const featuredMatch = liveFixtures[0] || todayFixtures[0];
@@ -82,16 +88,7 @@ export default function HomeScreen() {
           />
         }
       >
-        {/* Header / Greeting */}
-        <Animated.View entering={FadeInDown.delay(100).duration(600)} style={styles.header}>
-          <View>
-            <Text style={styles.greeting}>{getGreeting()},</Text>
-            <Text style={styles.userName}>Divyanshu</Text>
-          </View>
-          <View style={styles.headerRight}>
-            <View style={styles.notificationDot} />
-          </View>
-        </Animated.View>
+
 
         {/* Live Matches Section */}
         {liveFixtures.length > 0 && (
@@ -142,19 +139,7 @@ export default function HomeScreen() {
           </Animated.View>
         )}
 
-        {/* AI Insights */}
-        <Animated.View entering={FadeInDown.delay(900).duration(600)} style={styles.insightSection}>
-          <SectionHeader title="AI INSIGHTS" />
-          <InsightCard
-            title="Why is Liverpool winning?"
-            insights={[
-              'High pressing disrupting Man City build-up',
-              'Trent Alexander-Arnold creating overloads on the right',
-              'Salah exploiting space behind the defense',
-              'Better ball retention and movement',
-            ]}
-          />
-        </Animated.View>
+
 
         {/* Bottom spacing */}
         <View style={{ height: 100 }} />
@@ -170,6 +155,10 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     flex: 1,
+  },
+  loadingText: {
+    ...Typography.body,
+    color: OffsideColors.textTertiary,
   },
   content: {
     paddingBottom: 20,

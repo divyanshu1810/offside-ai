@@ -1,0 +1,209 @@
+INFO:     Will watch for changes in these directories: ['/Users/divyanshuyadav/Downloads/apps/offside-ai/backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [11803] using StatReload
+INFO:     Started server process [11805]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55078 - "GET /api/news HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55107 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55109 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55126 - "GET /api/news HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55279 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55278 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55294 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55294 - "GET /api/football/fixtures?date=2026-07-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55294 - "GET /api/football/fixtures?date=2026-07-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55294 - "GET /api/football/fixtures?id=1585095 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55304 - "GET /api/football/fixtures/statistics?fixture=1585095 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55306 - "GET /api/football/predictions?fixture=1585095 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55305 - "GET /api/football/fixtures/lineups?fixture=1585095 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55303 - "GET /api/football/fixtures/events?fixture=1585095 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55314 - "GET /api/news HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55367 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55366 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55374 - "GET /api/football/fixtures?date=2026-07-12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55374 - "GET /api/football/fixtures?date=2026-07-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55379 - "GET /api/football/fixtures/events?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55374 - "GET /api/football/fixtures?id=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55380 - "GET /api/football/fixtures/statistics?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55382 - "GET /api/football/predictions?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55381 - "GET /api/football/fixtures/lineups?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55402 - "GET /api/football/fixtures/statistics?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55401 - "GET /api/football/fixtures/events?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55400 - "GET /api/football/fixtures?id=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55403 - "GET /api/football/fixtures/lineups?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55404 - "GET /api/football/predictions?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55413 - "GET /api/football/fixtures/lineups?fixture=1035041 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55419 - "GET /api/news HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55631 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55637 - "GET /api/football/fixtures?id=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55641 - "GET /api/football/fixtures/lineups?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55639 - "GET /api/football/fixtures/events?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55642 - "GET /api/football/predictions?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55640 - "GET /api/football/fixtures/statistics?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55657 - "GET /api/football/fixtures?date=2026-07-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55659 - "GET /api/football/fixtures/events?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55661 - "GET /api/football/fixtures/lineups?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55657 - "GET /api/football/fixtures?id=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55662 - "GET /api/football/predictions?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55660 - "GET /api/football/fixtures/statistics?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55671 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55689 - "GET /api/football/fixtures/statistics?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55690 - "GET /api/football/fixtures/lineups?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55688 - "GET /api/football/fixtures/events?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55684 - "GET /api/football/fixtures?id=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55698 - "GET /api/football/fixtures/statistics?fixture=1035041 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55702 - "GET /api/news HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55845 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55844 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55844 - "GET /api/football/fixtures?id=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55851 - "GET /api/football/fixtures/lineups?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55852 - "GET /api/football/predictions?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55845 - "GET /api/football/fixtures/events?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55850 - "GET /api/football/fixtures/statistics?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55859 - "GET /api/football/fixtures?date=2026-07-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55864 - "GET /api/football/predictions?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55859 - "GET /api/football/fixtures?id=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55861 - "GET /api/football/fixtures/events?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55863 - "GET /api/football/fixtures/lineups?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55862 - "GET /api/football/fixtures/statistics?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55871 - "GET /api/news HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55885 - "GET /api/football/players?search=salah HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55897 - "GET /api/football/players/topscorers?league=39&season=2024 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55953 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55954 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55953 - "GET /api/football/players/topscorers?league=39&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55963 - "GET /api/football/players?search=Leo&league=39&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55965 - "GET /api/football/players?search=Leo+&league=39&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55969 - "GET /api/football/players?search=Leo+MN&league=39&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55967 - "GET /api/football/players?search=Leo+M&league=39&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55963 - "GET /api/football/players?search=Leo+M&league=39&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55984 - "GET /api/football/players?search=salah&league=39&season=2024 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56012 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56032 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56031 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56031 - "GET /api/football/players/topscorers?league=39&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56060 - "GET /api/football/players?search=Leo+Messi&league=140&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56063 - "GET /api/football/players?search=Leo+Messi&league=61&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56062 - "GET /api/football/players?search=Leo+Messi&league=135&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56061 - "GET /api/football/players?search=Leo+Messi&league=78&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56059 - "GET /api/football/players?search=Leo+Messi&league=39&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56071 - "GET /api/news HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56077 - "GET /api/football/players/topscorers?league=39&season=2025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56087 - "GET /api/football/players/topscorers?league=39&season=2024 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56086 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56150 - "GET /api/football/fixtures?date=2026-07-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56150 - "GET /api/football/fixtures?id=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56155 - "GET /api/football/fixtures/statistics?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56157 - "GET /api/football/predictions?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56154 - "GET /api/football/fixtures/events?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56156 - "GET /api/football/fixtures/lineups?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57261 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57260 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57371 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57372 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57380 - "GET /api/football/fixtures?id=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57385 - "GET /api/football/predictions?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57384 - "GET /api/football/fixtures/lineups?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57383 - "GET /api/football/fixtures/statistics?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57382 - "GET /api/football/fixtures/events?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57401 - "POST /api/ai/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57725 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57726 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57769 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57768 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57779 - "POST /api/ai/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57818 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57817 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /api/news HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57857 - "POST /api/ai/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57895 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57900 - "GET /api/football/fixtures/events?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57903 - "GET /api/football/predictions?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57901 - "GET /api/football/fixtures/statistics?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57902 - "GET /api/football/fixtures/lineups?fixture=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57895 - "GET /api/football/fixtures?id=1581037 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57910 - "GET /api/football/fixtures?date=2026-07-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57915 - "GET /api/football/fixtures/lineups?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57916 - "GET /api/football/predictions?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "GET /api/football/fixtures/statistics?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57910 - "GET /api/football/fixtures?id=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57913 - "GET /api/football/fixtures/events?fixture=1581821 HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:57932 - "GET /api/football/fixtures/events?fixture=1581821 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57936 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57949 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58002 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58007 - "GET /api/news HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58027 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58026 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58040 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58039 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58059 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58060 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58068 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58069 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58105 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58104 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58111 - "GET /api/news HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11805]
+INFO:     Started server process [59712]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58166 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58170 - "GET /api/news HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'routers/ai.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [59712]
+INFO:     Started server process [60102]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58202 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58203 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58209 - "POST /api/ai/chat HTTP/1.1" 404 Not Found
+WARNING:  StatReload detected changes in 'routers/ai.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [60102]
+INFO:     Started server process [60603]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58253 - "GET /api/football/fixtures?date=2026-07-11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58252 - "GET /api/football/fixtures?live=all HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58260 - "POST /api/ai/chat HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'venv/lib/python3.11/site-packages/cohere/config.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [60603]
+INFO:     Started server process [61109]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'routers/ai.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61109]
+INFO:     Started server process [61238]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'routers/ai.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61238]
+INFO:     Started server process [61330]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58309 - "POST /api/ai/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58323 - "POST /api/ai/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58333 - "POST /api/ai/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58337 - "GET /api/news HTTP/1.1" 200 OK

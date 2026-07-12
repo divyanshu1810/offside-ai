@@ -48,4 +48,5 @@ export const AppIcons = {
   },
   league: { ios: 'shield.fill', android: 'shield', web: 'shield' },
   send: { ios: 'paperplane.fill', android: 'send', web: 'send' },
+  news: { ios: 'newspaper.fill', android: 'article', web: 'article' },
 } satisfies Record<string, AppIconName>;

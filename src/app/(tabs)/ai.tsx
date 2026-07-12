@@ -137,23 +137,7 @@ export default function AIScreen() {
             <Text style={styles.welcomeTitle}>Hi Divyanshu,</Text>
             <Text style={styles.welcomeSubtitle}>How can I help you today?</Text>
 
-            {/* Quick Actions */}
-            <View style={styles.quickActions}>
-              {AI_QUICK_ACTIONS.map((action, index) => (
-                <Animated.View
-                  key={action.id}
-                  entering={FadeInDown.delay(200 + index * 80).duration(400)}
-                >
-                  <Pressable
-                    onPress={() => handleQuickAction(action)}
-                    style={styles.quickActionChip}
-                  >
-                    <AppIcon name={action.icon} size={19} color={OffsideColors.primaryGreen} />
-                    <Text style={styles.quickActionText}>{action.label}</Text>
-                  </Pressable>
-                </Animated.View>
-              ))}
-            </View>
+
           </Animated.View>
         )}
 
@@ -173,14 +157,16 @@ export default function AIScreen() {
                 <Text style={styles.aiMsgLabel}>Coach AI</Text>
               </View>
             )}
-            <Text
-              style={[
-                styles.messageText,
-                msg.role === 'user' ? styles.userMessageText : styles.aiMessageText,
-              ]}
-            >
-              {msg.content}
-            </Text>
+            {msg.role === 'user' ? (
+              <Text style={[styles.messageText, styles.userMessageText]}>
+                {msg.content}
+              </Text>
+            ) : (
+              <ParsedChatText
+                text={msg.content}
+                style={[styles.messageText, styles.aiMessageText]}
+              />
+            )}
           </Animated.View>
         ))}
 
@@ -223,6 +209,24 @@ export default function AIScreen() {
     </KeyboardAvoidingView>
   );
 }
+
+const ParsedChatText = ({ text, style }: { text: string; style?: any }) => {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return (
+    <Text style={style}>
+      {parts.map((part, index) => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+          return (
+            <Text key={index} style={{ fontWeight: 'bold', color: OffsideColors.textPrimary }}>
+              {part.slice(2, -2)}
+            </Text>
+          );
+        }
+        return <Text key={index}>{part}</Text>;
+      })}
+    </Text>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {

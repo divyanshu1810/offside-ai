@@ -23,6 +23,7 @@ export const API_FOOTBALL = {
     TEAM_STATS: '/teams/statistics',
     STANDINGS: '/standings',
     LEAGUES: '/leagues',
+    TOP_SCORERS: '/players/topscorers',
   },
   // Top leagues IDs
   LEAGUES: {
