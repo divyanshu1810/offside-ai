@@ -48,3 +48,5 @@ example
 # backend
 venv
 __pycache__
+.vercel
+.env*

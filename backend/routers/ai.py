@@ -38,7 +38,7 @@ async def proxy_cohere_chat(request: Request):
     try:
         # Initialize LangChain ChatCohere with the model
         chat = ChatCohere(
-            model="command-a-plus-05-2026", 
+            model="command-r-plus-08-2024", 
             cohere_api_key=COHERE_API_KEY
         )
         
