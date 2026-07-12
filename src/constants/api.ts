@@ -5,7 +5,7 @@
 
 import { Platform } from 'react-native';
 
-const LOCAL_BACKEND_URL = Platform.OS === 'android' ? 'http://10.0.2.2:8000' : 'http://localhost:8000';
+export const LOCAL_BACKEND_URL = process.env.EXPO_PUBLIC_BACKEND_URL || (Platform.OS === 'android' ? 'http://10.0.2.2:8000' : 'http://localhost:8000');
 
 // ─── API-Football (Proxied) ────────────────────────────────────
 export const API_FOOTBALL = {

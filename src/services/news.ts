@@ -4,9 +4,9 @@
  */
 
 import { API_FOOTBALL } from '@/constants/api';
-import { Platform } from 'react-native';
+import { LOCAL_BACKEND_URL } from '@/constants/api';
 
-const BACKEND_URL = Platform.OS === 'android' ? 'http://10.0.2.2:8000' : 'http://localhost:8000';
+const BACKEND_URL = LOCAL_BACKEND_URL;
 
 export interface NewsArticle {
   title: string;
