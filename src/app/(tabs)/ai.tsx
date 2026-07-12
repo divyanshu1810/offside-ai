@@ -134,9 +134,7 @@ export default function AIScreen() {
             <View style={styles.welcomeAvatar}>
               <AppIcon name={AppIcons.football} size={34} color={OffsideColors.primaryGreen} />
             </View>
-            <Text style={styles.welcomeTitle}>Hi Divyanshu,</Text>
             <Text style={styles.welcomeSubtitle}>How can I help you today?</Text>
-
 
           </Animated.View>
         )}
