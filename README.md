@@ -1,56 +1,94 @@
-# Welcome to your Expo app 👋
+# Offside AI ⚽️🧠
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Offside AI is a premium, AI-powered football companion app built with React Native (Expo) and FastAPI. It offers live match statistics, tactical analysis, Fantasy Premier League (FPL) advice, the latest football news, and direct links to live streams. 
 
-## Get started
+At the core of Offside AI is **Coach AI**, an elite intelligent assistant powered by Cohere's latest models (Command A+), capable of dissecting match data, explaining complex rules to a 10-year-old, predicting match outcomes, and offering deep tactical insights.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🌟 Features
 
-2. Start the app
+- **Live Matches & Stats**: Get real-time scores, lineups, and deep statistical data powered by API-Football.
+- **Coach AI**: A conversational AI assistant strictly trained on football. Ask about tactics, player stats, or FPL advice.
+- **Automated Tactical Insights**: Instantly generate professional pundit-level bullet points explaining why a match is unfolding the way it is.
+- **Live Streams**: Direct deep links to popular external football streaming platforms.
+- **Latest News**: Stay updated with the latest headlines parsed directly from the BBC Football RSS feed.
+- **Premium Dark UI**: A sleek, glassmorphism-inspired dark mode interface tailored for modern football fans.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🛠 Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Frontend (Mobile App)
+- **Framework**: React Native with Expo (Expo Router for navigation)
+- **Styling**: Vanilla StyleSheet with custom Glassmorphism components (`react-native-reanimated` for micro-animations)
+- **Image Handling**: `expo-image` for highly performant, cached league and team logos
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Backend (API Proxy & AI)
+- **Framework**: FastAPI (Python)
+- **AI Engine**: Cohere (`command-a-plus-05-2026`) via `langchain-cohere`
+- **External APIs**: API-Football, TheSportsDB, FPL API
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🚀 Getting Started
+
+### 1. Backend Setup
+
+The backend handles API key security and constructs LangChain AI prompts.
 
 ```bash
-npm run reset-project
+cd backend
+
+# Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Create a .env file based on the config
+# Ensure you provide COHERE_API_KEY and API_FOOTBALL_KEY
+touch .env
+
+# Run the FastAPI server locally
+uvicorn main:app --reload --port 8000
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Frontend Setup
 
-### Other setup steps
+The mobile app connects to the FastAPI backend.
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+```bash
+# Return to the root directory
+cd ..
 
-## Learn more
+# Install dependencies
+npm install
 
-To learn more about developing your project with Expo, look at the following resources:
+# Start the Expo development server
+npx expo start --clear
+```
+*Note: Ensure your local environment variables in the frontend point to `http://localhost:8000` if you are testing on a simulator.*
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 📦 Building for Production
 
-Join our community of developers creating universal apps.
+Offside AI is configured to use EAS (Expo Application Services) for seamless Android APK and iOS production builds.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+To build an Android APK (for direct install):
+```bash
+eas build -p android --profile preview
+```
+
+To build an Android App Bundle (AAB) for the Google Play Store:
+```bash
+eas build -p android --profile production
+```
+
+---
+
+## 🛡 AI Guardrails
+
+Coach AI is strictly bound by system-level guardrails. It will actively decline to answer any questions outside the scope of football (e.g., coding, politics, or general knowledge) to maintain its persona as an elite tactical analyst.
